@@ -1,18 +1,64 @@
 h1{
-text-align: center
+text-align: center;
 }
-
+h3{
+text-align: center;
+}
+figure{
+text-align: center;
+padding: 4px;
+margin: auto;
+}
+figcaption{
+font-style: italic;
+font-size: .75em;
+}
 .image-gallery{
-display:grid;
-}
-.image_1{
+display: grid;
+grid-template-columns; auto, auto, auto;
+grid-template-rows: 0px 400px;
+grid-gap: 10px;
 
 }
-
-.image_2{
-
+.image-gallery-item1{
+background-color: rgba(0,255,0,0.3);
+border: 10px solid rgba(255,255,0,0.3);
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start:1;
+grid-row-start:2; 
 }
-
-.image_3{
-
+.image-gallery-item2{
+background-color: rgba(255,0,0,0.3);
+border: 10px solid rgba(255,255,0,0.3);
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start:1;
+grid-row-start:2;
+}
+.image-gallery-item3{
+background-color: rgba(0,0,255,0.3);
+border: 10px solid rgba(255,255,0,0.3);
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start:1;
+grid-row-start:2;
+}
+.navbar{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+.navbar a{
+float: right;
+margin-bottom: 20px;
+}
+.navbar a:link{
+text-decoration: none;
+}
+.navbar a:hover{
+text-decoration: underline;
+}
+.navbar a:active{
+text-decoration:underline;
 }
