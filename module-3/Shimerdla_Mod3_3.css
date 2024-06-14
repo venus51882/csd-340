@@ -37,10 +37,21 @@ padding: 10px;
 list-style-type: upper-roman;
 list-style-position: inside;
 }
-.bottom{
+.navbar{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+.navbar a{
 float: right;
 margin-bottom: 20px;
 }
-a.hover{
+.navbar a:link{
 text-decoration: none;
+}
+.navbar a:hover{
+text-decoration: underline;
+}
+.navbar a:active{
+text-decoration:underline;
 }
