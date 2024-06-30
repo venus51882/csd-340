@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>	
+	<link href="Shimerdla_Mod2_2.css" type="text/css" rel="stylesheet">
+    <script>
+        var firstVariableValue = " during the summer months";
+		var secondVariableValue = " on a cruise in ";
+		var thirdVariableValue = " getting to go to ";
+		var fourthVariableValue = " to the beach and ";
+    </script>
+</head>
+
+<body>
+	<div id="container">
+		<h1>Assignment 9.3: JavaScript - Part 1</h1>
+	
+		<p>Family Trips</p>
+
+        <p>My kids and I went to Worlds of Fun. We love going to the amusement park<span id = "Trip1"> ____________</span>. We like to go every summer. We also go to Oceans of Fun when we are there. The best part of Oceans of Fun is going to the wave pool.</p>
+		<p>We are all going<span id = "Trip2"> ____________</span>April next year. This is the first time we have been on a trip out of the country. We are so excited to relax on the beach and hang out on the ship.</p>
+		<p>But our favorite family trip is <span id = "Trip3Part1">____________</span> Okoboji, Iowa. We like to stay at Triggs Bay Resort. When we are there we like to go<span id = "Trip3Part2">____________</span> the pool. We also like to go fishing when we are there.</p>
+		<p>
+			<button type  = "button"
+			onclick = "document.getElementById('Trip1').innerHTML=firstVariableValue"> Trip 1</button><br />
+		</p>
+		<p>
+			<button type  = "button"
+			onclick = "document.getElementById('Trip2').innerHTML=secondVariableValue"> Trip 2</button><br />
+		</p>
+		<p>
+			<button type  = "button"
+			onclick = "document.getElementById('Trip3Part1').innerHTML=thirdVariableValue"> Trip 3, Part 1</button><br />
+		</p>
+		<p>
+			<button type  = "button"
+			onclick = "document.getElementById('Trip3Part2').innerHTML=fourthVariableValue"> Trip 3, Part 2</button><br />
+		</p>
+		
+	</div>
+	
+</body>
+
+</html>
