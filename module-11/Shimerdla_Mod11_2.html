@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>"CSD 340 Web Development with HTML and CSS"</title>
+    </head>
+
+<body>
+
+    <header>
+        <h1>Assignment 11.2:JavaScript-Part 3</h1>
+    </header>
+    <p>Enter an item for the list in the text box. <br>
+    Then click the add button to add item to the list.<br>
+    Then click the delete last entry button to delete the last button.<br>
+    Then click the display button to display the items on the list.<br></p>
+    
+        <input type="text" id="userInput" placeholder="Enter an Item">
+
+        <button onclick="addItem()">Add</button>
+        <button onclick="deleteItem()">Delete Last Entry</button>
+        <button onclick="displayItem()">Display</button>
+    <hr>
+        <div id = "output"></div>
+
+    
+        <script>
+            //object
+            const item = [];
+            
+            //add item 
+            function addItem(){
+                const userInputValue = document.getElementById('userInput').value;
+                item.push(userInputValue);
+                alert('Item '+userInputValue+' is added at position '+item.length);
+            }
+    
+            //delete item
+            function deleteItem(){
+                if (item.length>0){
+                    item.pop();
+                    alert ('Deleted. Items left on list: '+item);
+                }
+                else{
+                    alert('No item to delete.');
+                }
+            }
+            
+            //display items
+            function displayItem(){
+                const outputDiv = document.getElementById('output');
+                outputDiv.innerHTML = '';
+    
+                for(let i = 0; i<item.length;i++){
+                    const listItem =document.createElement('p');
+                    listItem.textContent = 'Item '+[i+1]+(' : ')+(item[i]);
+                    outputDiv.appendChild(listItem);
+                }
+                
+            }
+        </script>
+    
+</body>
+
+</html>
